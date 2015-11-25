@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/radioanimemx">
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Reproducir"-->
+        <!--android:id="@+id/btnEscucharAm"-->
+        <!--android:layout_gravity="right"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_centerHorizontal="true" />-->
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_addButtonColorNormal="#fafafa"
+        fab:fab_addButtonColorPressed="#f1f1f1"
+        fab:fab_addButtonPlusIconColor="#a1a0a0"
+        fab:fab_icon="@android:drawable/ic_media_play"
+        android:id="@+id/plause"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/multiple_actions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_addButtonColorNormal="#fafafa"
+        fab:fab_addButtonColorPressed="#f1f1f1"
+        fab:fab_addButtonPlusIconColor="#a1a0a0"
+        android:layout_marginBottom="54dp"
+        android:layout_marginRight="16dp"
+        fab:fab_labelStyle="@style/menu_labels_style"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#2cc4dc"
+            fab:fab_title="Twitter"
+            fab:fab_colorPressed="#a1a0a0"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#09177e"
+            fab:fab_title="Facebook"
+            fab:fab_colorPressed="#a1a0a0"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#f70101"
+            fab:fab_title="Youtube"
+            fab:fab_colorPressed="#a1a0a0"/>
+
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+</RelativeLayout>
